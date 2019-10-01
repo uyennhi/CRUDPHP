@@ -15,7 +15,7 @@
                 $maSinhVien = $_REQUEST["txtMaSinhVien"];
                 $content ="";
                 $filename = '../model/resource/learninghistory.txt';
-                  $content = $maQuaTrinhHocTap."#".$tuNam."#".$denNam."#".$tenTruong."#".$diaChiTruong."#".$maSinhVien;
+                  $content = $maQuaTrinhHocTap."#".$tuNam."#".$denNam."#".$tenTruong."#".$diaChiTruong."#".$maSinhVien."\n";
                   
                   if (is_writable($filename)) {
                       if (!$file= fopen($filename, 'a')) {
